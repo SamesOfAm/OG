@@ -1,0 +1,82 @@
+.sticky-bar-wrapper {
+    width: 100vw;
+    left: 0;
+    background-color: white;
+    z-index: 1;
+    height: 150px;
+    transition: all 350ms;
+}
+
+.sticky-bar {
+    position: absolute;
+    width: 100%;
+    max-width: 1010px;
+    margin: 0 auto;
+}
+
+.picture-grid {
+    position: relative;
+    width: 140%;
+    height: 4200px;
+    margin-top: 150px;
+    margin-left: -20%;
+}
+
+.picture-set {
+    width: 235px;
+    height: 390px;
+    float: left;
+}
+
+.picture-set .picture {
+    width: 235px;
+    background-size: cover;
+    -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+    filter: grayscale(100%);
+    transition: all 200ms;
+}
+
+.picture-set .picture:hover {
+    -webkit-filter: grayscale(0%); /* Safari 6.0 - 9.0 */
+    filter: grayscale(0%);
+}
+
+.picture-set:nth-child(odd) .picture:first-child {
+    height: 260px;
+}
+
+.picture-set:nth-child(odd) .picture:last-child {
+    height: 130px;
+}
+
+.picture-set:nth-child(even) .picture:first-child {
+    height: 130px;
+}
+
+.picture-set:nth-child(even) .picture:last-child {
+    height: 260px;
+}
+
+.instagram-icon {
+    float: left;
+    position: relative;
+    width: 50px;
+    height: 50px;
+    margin-top: -10px;
+    z-index: 1;
+}
+
+.instagram-icon-image {
+    width: 100%;
+}
+.instagram-icon-image img {
+    width: 100%;
+}
+
+@media screen and (max-width: 620px) {
+    .instagram-icon {
+        width: 30px;
+        height: 30px;
+        margin-top: 0;
+    }
+}
